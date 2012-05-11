@@ -1,0 +1,6 @@
+php app/console generate:bundle
+php app/console generate:bundle --namespace=My/GithubTriggerBundle --dir=src --no-interaction
+php app/console generate:doctrine:entity
+php app/console generate:doctrine:entities My
+php app/console doctrine:schema:update --force
+php app/console  doctrine:fixtures:load
